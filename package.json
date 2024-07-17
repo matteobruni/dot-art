@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:deploy": "tsc && vite build --base /dot-art",
     "preview": "vite preview",
-    "deploy": "pnpm run build && gh-pages -d dist"
+    "deploy": "pnpm run build:deploy && gh-pages -d dist"
   },
   "devDependencies": {
     "typescript": "^5.5.3",
